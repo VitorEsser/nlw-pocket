@@ -9,12 +9,34 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
 
     <title>Prompts</title>
   </head>
   <body>
     <div class="app">
-      <aside class="sidebar"></aside>
+      <button class="icon-button open-toggle" id="btn-open">
+        <img src="assets/open.svg" alt="Abrir Menu" class="icon" />
+      </button>
+
+      <aside class="sidebar">
+        <header class="sidebar-header">
+          <img src="assets/logo.svg" alt="Logo" class="logo" />
+
+          <button class="icon-button" id="btn-collapse">
+            <img src="assets/collapse.svg" alt="Fechar Menu" class="icon" />
+          </button>
+        </header>
+
+        <div class="sidebar-content">
+          <div class="search-container">
+            <img src="assets/search.svg" alt="Buscar" class="icon search-icon" />
+            <input type="text" class="search-input" id="search-input" placeholder="Buscar por título" />
+
+            <button class="btn btn-primary btn-full" id="btn-new">Novo Prompt</button>
+          </div>
+        </div>
+      </aside>
 
       <main class="main">
         <header class="main-header">
