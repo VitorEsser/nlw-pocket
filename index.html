@@ -16,7 +16,7 @@
   <body>
     <div class="app">
       <button class="icon-button open-toggle" id="btn-open">
-        <img src="assets/open.svg" alt="Abrir Menu" class="icon" />
+        <img src="assets/open.svg" alt="Open Menu" class="icon" />
       </button>
 
       <aside class="sidebar">
@@ -24,42 +24,38 @@
           <img src="assets/logo.svg" alt="Logo" class="logo" />
 
           <button class="icon-button" id="btn-collapse">
-            <img src="assets/collapse.svg" alt="Fechar Menu" class="icon" />
+            <img src="assets/collapse.svg" alt="Close Menu" class="icon" />
           </button>
         </header>
 
         <div class="sidebar-content">
           <div class="search-container">
-            <img src="assets/search.svg" alt="Buscar" class="icon search-icon" />
-            <input type="text" class="search-input" id="search-input" placeholder="Buscar por título" />
+            <img src="assets/search.svg" alt="Search" class="icon search-icon" />
+            <input type="text" class="search-input" id="search-input" placeholder="Search by title" />
 
-            <button class="btn btn-primary btn-full" id="btn-new">Novo Prompt</button>
+            <button class="btn btn-primary btn-full" id="btn-new">New Prompt</button>
           </div>
+
+          <ul class="prompt-list" id="prompt-list"></ul>
         </div>
       </aside>
 
       <main class="main">
         <header class="main-header">
           <button id="btn-copy" class="btn btn-outline">
-            <img src="assets/copy.svg" alt="Copiar" class="icon" />
-            <span>Copiar</span>
+            <img src="assets/copy.svg" alt="Copy" class="icon" />
+            <span>Copy</span>
           </button>
 
-          <button id="btn-save" class="btn btn-primary w-150">Salvar</button>
+          <button id="btn-save" class="btn btn-primary w-150">Save</button>
         </header>
 
-        <div data-placeholder="Título do prompt" class="editable-wrapper" id="title-wrapper">
-          <h1 id="prompt-title" class="prompt-title" contenteditable="true">⚡ Planejamento de tarefas semanais</h1>
+        <div data-placeholder="Prompt Title" class="editable-wrapper" id="title-wrapper">
+          <h1 id="prompt-title" class="prompt-title" contenteditable="true"></h1>
         </div>
 
-        <div data-placeholder="Conteúdo do prompt ..." class="editable-wrapper" id="content-wrapper">
-          <div id="prompt-content" class="prompt-content" contenteditable="true">
-            Me ajude a organizar minha semana de forma equilibrada.<br />
-            Distribua minhas tarefas profissionais e pessoais em blocos de tempo realistas.<br />
-            Sugira horários para foco profundo e momentos para pausas estratégicas.<br />
-            Inclua dicas de priorização. No final, entregue o plano em formato de checklist diário para fácil
-            acompanhamento.
-          </div>
+        <div data-placeholder="Prompt Content ..." class="editable-wrapper" id="content-wrapper">
+          <div id="prompt-content" class="prompt-content" contenteditable="true"></div>
         </div>
       </main>
     </div>
